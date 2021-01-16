@@ -1,0 +1,209 @@
+body {
+    background-image: url('../img/fondo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    transition: 3s;
+}
+nav {
+    margin: 20px auto;
+    background-color: #5f5f5f;
+    border-radius: 20px;
+    padding-left: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    font-family: 'Indie Flower', cursive;
+    float: left;
+    font-size: 15px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background: #272727;
+  }
+  
+  nav ul li a:hover {
+    background: #272727;
+  }
+
+  .logo {
+      width: 40px;
+      border-radius: 20px;
+      position: absolute;
+      top: 30px;
+      left: 20px;
+  }
+  .lateral1 {
+     display: none;
+  }
+  .img {
+      width: 300px;
+      height: 300px;
+      border: rgb(253, 192, 223) solid 5px;
+      border-radius: 30px;
+  }
+  .centro {
+      background-color: rgba(112, 128, 144, 0.712);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 20px;
+  }
+  .titulo {
+      align-self: center;
+      font-size: 20px;
+  }
+  .slogan {
+      position: relative;
+      top: -20px;
+      align-self: center;
+      font-size: 15px;
+  }
+  .imagenprincipal {
+      width: 400px;
+      height: 400px;
+      align-self: center;
+      border: slategrey 5px solid;
+      border-radius: 50px;
+  }
+  .lateral2 {
+      display: none;
+  }
+  .mensaje {
+      font-size: 20px;
+      padding: 20px;
+      text-align: justify;
+  }
+  .pie {
+      background-color: rgba(245, 222, 179, 0.685);
+      color: black;
+      padding: 20px;
+      border: rgb(255, 180, 220) 5px solid;
+      border-radius: 20px;
+  }
+  .titulopie {
+     font-size: 20px;
+  }
+  .categoria {
+      display: none;
+  }
+  @media (min-width:850px) and (max-width:1100px) {
+      .categoria {
+          display: inline;
+      }
+      nav ul li {
+          font-size: 20px;
+          padding-left: 40px;
+      }
+      
+  
+  .lateral1 {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 200px;
+      background-color: rgba(255, 228, 181, 0.479);
+      border-radius: 20px;
+      color: rgb(66, 66, 66);
+  }
+  .img {
+      margin: 5px;
+      width: 150px;
+      height: 150px;
+      align-self: center;
+  }
+  .titulolateral1 {
+      font-size: 15px;
+      align-self: center;
+  }
+  .logo {
+      width: 60px;
+      top: 22px;
+  }
+}
+@media (min-width:1100px) {
+    nav ul li {
+        font-size: 30px;
+        padding-left: 100px;
+    }
+    nav ul {
+        padding-left: 200px;
+    }
+    .logo {
+        width: 150px;
+        left: 50px;
+        top: 20px;
+        border: #5f5f5f solid 5px;
+    }
+    .lateral1 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 220px;
+        left: 50px;
+        width: 400px;
+        background-color: rgba(255, 228, 181, 0.479);
+        border-radius: 20px;
+        color: rgb(66, 66, 66);
+    }
+    .titulolateral1 {
+        align-self: center;
+    }
+    .img {
+        align-self: center;
+    }
+    .lateral2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 1200px;
+        top: 150px;
+        background-color: rgba(188, 143, 143, 0.788);
+        color: black;
+        border-radius: 20px;
+        font-size: 25px;
+        width: 250px;
+    }
+    .centro {
+        width: 600px;
+        margin-left: 500px;
+    }
+    .titulo {
+        font-size: 50px;
+    }
+    .slogan {
+        font-size: 30px;
+    }
+    .mensaje{
+        font-size: 25px;
+    }
+    .lista {
+        align-self: center;
+        font-size: 25px;
+    }
+    .pie {
+        position: absolute;
+        top: 1300px;
+        width: 80%;
+        left: 100px;
+        margin-bottom: 50px;
+        font-size: 25px;
+}
+.titulopie {
+    font-size: 30px;
+}
+}
