@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Indie Flower', cursive;
-    color: white;
+    color: black;
     transition: 3s;
 }
 nav {
@@ -41,7 +41,9 @@ nav {
   nav ul li a:hover {
     background: #272727;
   }
-
+.categoria {
+    display: none;
+}
   .logo {
       width: 40px;
       border-radius: 20px;
@@ -49,61 +51,27 @@ nav {
       top: 30px;
       left: 20px;
   }
-  .lateral1 {
-     display: none;
-  }
+.padre {
+    background-color: rgba(169, 169, 169, 0.52);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
   .img {
+      align-self: center;
       width: 300px;
       height: 300px;
       border: rgb(253, 192, 223) solid 5px;
       border-radius: 30px;
   }
-  .centro {
-      background-color: rgba(112, 128, 144, 0.712);
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      border-radius: 20px;
-  }
   .titulo {
-      align-self: center;
-      font-size: 20px;
+      text-align: center;
   }
-  .slogan {
-      position: relative;
-      top: -20px;
-      align-self: center;
-      font-size: 15px;
-  }
-  .imagenprincipal {
+  .im1 {
       width: 400px;
-      height: 400px;
-      align-self: center;
-      border: slategrey 5px solid;
-      border-radius: 50px;
   }
-  .lateral2 {
-      display: none;
-  }
-  .mensaje {
-      font-size: 20px;
-      padding: 20px;
-      text-align: justify;
-  }
-  .pie {
-      background-color: rgba(245, 222, 179, 0.685);
-      color: black;
-      padding: 20px;
-      border: rgb(255, 180, 220) 5px solid;
-      border-radius: 20px;
-  }
-  .titulopie {
-     font-size: 20px;
-  }
-  .categoria {
-      display: none;
-  }
-  @media (min-width:850px) and (max-width:1100px) {
+ 
+  @media (min-width:850px) and (max-width:1500px) {
       .categoria {
           display: inline;
       }
@@ -111,116 +79,165 @@ nav {
           font-size: 20px;
           padding-left: 40px;
           transition: 2s;
-      }
-      
+      } 
   
-  .lateral1 {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      width: 200px;
-      background-color: rgba(255, 228, 181, 0.479);
-      border-radius: 20px;
-      color: rgb(66, 66, 66);
-      transition: 2s;
-  }
   .img {
       margin: 5px;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       align-self: center;
       transition: 2s;
+      align-self: flex-start;
+      margin-left: 50px;
   }
-  .titulolateral1 {
-      font-size: 15px;
-      align-self: center;
-      transition: 2s;
+  .padre{
+      height: 800px;
   }
+.titulo {
+    align-self: flex-start;
+    margin-left: 100px;
+}
+.t2 {
+    position: absolute;
+    top: 120px;
+    left: 280px;
+}
+.im2 {
+    position: absolute;
+    top: 192px;
+    left: 270px;
+}
+.im3 {
+    position: absolute;
+    top: 192px;
+    left: 550px;
+}
+.im5 {
+    position: absolute;
+    top: 413px;
+    left: 270px;
+}
+.im6 {
+    position: absolute;
+    top: 413px;
+    left: 550px;
+}
+.t3 {
+    position: absolute;
+    top: 620px;
+    left: 250px;
+}
+.im7 {
+    position: absolute;
+    top: 630px;
+    left: 10px;
+}
+.im8 {
+    position: absolute;
+    top: 680px;
+    left: 250px;
+}
+.im9 {
+    position: absolute;
+    top: 680px;
+    left: 500px;
+}
+
+ 
   .logo {
       width: 60px;
       top: 22px;
       transition: 2s;
   }
 }
-@media (min-width:1100px) {
+@media (min-width:1500px) {
+    .categoria {
+        display: inline;
+    }
     nav ul li {
-        font-size: 30px;
+        font-size: 20px;
         padding-left: 100px;
     }
     nav ul {
         padding-left: 200px;
     }
     .logo {
-        width: 150px;
+        width: 100px;
         left: 50px;
         top: 20px;
         border: #5f5f5f solid 5px;
-        transition: 2s;
+        transition: width 2s;
     }
-    .lateral1 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 220px;
-        left: 50px;
-        width: 400px;
-        background-color: rgba(255, 228, 181, 0.479);
-        border-radius: 20px;
-        color: rgb(66, 66, 66);
-        transition: 2s;
+    .padre {
+        height: 1000px;
     }
-    .titulolateral1 {
-        align-self: center;
-    }
+.titulo {
+    align-self: flex-start;
+}
+.t1 {
+    display: none;
+}
     .img {
-        align-self: center;
-    }
-    .lateral2 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 1200px;
-        top: 150px;
-        background-color: rgba(188, 143, 143, 0.788);
-        color: black;
-        border-radius: 20px;
-        font-size: 25px;
+
+        align-self: flex-start;
         width: 250px;
-        transition: 2s;
+        height: 250px;
     }
-    .centro {
-        width: 600px;
-        margin-left: 500px;
-        transition: 2s;
-    }
-    .titulo {
-        font-size: 50px;
-        transition: 2s;
-    }
-    .slogan {
-        font-size: 30px;
-        transition: 2s;
-    }
-    .mensaje{
-        font-size: 25px;
-        transition: 2s;
-    }
-    .lista {
-        align-self: center;
-        font-size: 25px;
-        transition: 2s;
-    }
-    .pie {
+    .t2 {
         position: absolute;
-        top: 1300px;
-        width: 80%;
-        left: 100px;
-        margin-bottom: 50px;
-        font-size: 25px;
-        transition: 2s;
-}
-.titulopie {
-    font-size: 30px;
-    transition: 2s;
-}
+        top: 100px;
+        left: 310px;
+        font-size: 30px;
+    }
+    .im1 {
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+    .im2 {
+        position: absolute;
+        top: 205px;
+        left: 350px;
+    }
+    .im3 {
+        position: relative;
+        top: 120px;
+        left: 50px;
+    }
+    .im4 {
+        position: absolute;
+        top: 485px;
+        left: 350px;
+    }
+    .im5 {
+        position: absolute;
+        top: 205px;
+        left: 650px;
+    }
+    .im6 {
+        position: absolute;
+        top: 485px;
+        left: 650px;
+    }
+    .im7 {
+        position: relative;
+        top: 140px;
+        left: 50px;
+    }
+    .t3 {
+        position: absolute;
+        top: 100px;
+        left: 1150px;
+        font-size: 30px;
+    }
+    .im8 {
+        position: absolute;
+        top: 205px;
+        left: 1080px;
+    }
+    .im9 {
+        position: absolute;
+        top: 550px;
+        left: 1080px;
+    }
 }
